@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+    {{#video.items}}
+    	<iframe width="560" height="315" src="//www.youtube.com/embed/{{id.videoId}}" frameborder="0" allowfullscreen></iframe>
+    {{/video.items}}
+  </body>
+</html>
+
