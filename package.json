@@ -9,6 +9,6 @@
     "compass": "*",
     "express": "3.4.8",
     "hjs": "*",
-    "youtube-node": "^1.1.2"
+    "youtube-node": "git://github.com/radicalrichard/youtube-node#master"
   }
 }

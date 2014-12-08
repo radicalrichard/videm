@@ -3,13 +3,14 @@
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-    {{#video.items}}
-    	<iframe width="560" height="315" src="//www.youtube.com/embed/{{id.videoId}}" frameborder="0" allowfullscreen></iframe>
-    {{/video.items}}
+    <div id="video">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+    </div>
+  
+    <script type="text/javascript" src="/javascripts/app.js"></script>
   </body>
 </html>
 

@@ -8,6 +8,7 @@ var http = require('http');
 var path = require('path');
 
 var VideoController = require('./app/controllers/video_controller');
+var PagesController = require('./app/controllers/pages_controller');
 
 var app = express();
 
@@ -31,7 +32,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', VideoController.index);
+app.get('/', PagesController.index);
+app.get('/videos', VideoController.index);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
